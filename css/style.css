@@ -1,0 +1,125 @@
+/* Ejercicio 1: Flexbox
+        Crea una fila de tres elementos, donde el primer y último elemento tengan el doble de ancho que el elemento del medio.
+         */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.item {
+    border: 1px solid #333;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.double-width {
+    flex-grow: 2;
+}
+
+/*Ejercicio 2: Flexbox
+        Crea una disposición en forma de columna con cinco elementos, donde el segundo y cuarto elemento tengan el doble de altura que los demás.
+        */
+
+.container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+.item2 {
+    border: 1px solid #333;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.double-height2 {
+    flex-grow: 2;
+}
+
+/*Ejercicio 3: Grid
+Crea un grid de 3x3 donde cada celda tenga un borde, relleno y algún contenido. Haz que la primera fila tenga el doble de altura que las demás filas. */
+
+.container3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-gap: 10px;
+    margin: 0;
+    height: 100vh;
+}
+
+.item3 {
+    border: 1px solid #333;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+/*Ejercicio 4: Grid
+Crea un grid de 2x4 donde las dos primeras celdas ocupen dos columnas cada una.
+*/
+
+.container4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    margin: 0;
+    height: 100vh;
+}
+
+.item4 {
+    border: 1px solid #333;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.double-width4 {
+    grid-column: span 2;
+}
+
+/*Ejercicio 5: Combinado
+Crea una estructura que contenga dos filas. En la primera fila, utiliza Flexbox para alinear tres elementos en el centro. En la segunda fila, utiliza Grid para crear una disposición de 2x2.
+*/
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-item {
+    border: 1px solid #333;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.grid-item {
+    border: 1px solid #333;
+    padding: 20px;
+    text-align: center;
+}
